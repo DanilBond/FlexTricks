@@ -8,6 +8,9 @@ html, body{
 #Logo__Div{
     margin-right: 750px;
 }
+#Burger__Check{
+    display: none;
+}
 #Logo__Div img{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -56,6 +59,15 @@ nav ul li a{
     }
 }
 @media screen and (max-width: 800px){
+   #Burger__Check{
+       display: inline;
+    
+       width: 25px;
+       height: 25px;
+   }
+   #Burger__Check:checked{
+
+   }
     nav ul {
      flex-direction: column;
      align-items: center;
@@ -73,13 +85,13 @@ nav ul li a{
         margin-top: 25px;
         
         font-size: 20px;
-        margin-right: 50px;
+        margin-right: 0px;
     
     }
     nav ul{
         padding-bottom: 25px;
     }
     #Logo__Div{
-        margin-left: 45px;
+        margin-left: 100px;
     }
 }
