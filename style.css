@@ -76,4 +76,10 @@ nav ul li a{
         margin-right: 50px;
     
     }
+    nav ul{
+        padding-bottom: 25px;
+    }
+    #Logo__Div{
+        margin-left: 45px;
+    }
 }
