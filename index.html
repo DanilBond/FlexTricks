@@ -13,13 +13,39 @@
             <ul>
                 
                 <div id="Logo__Div"><img src="./img/logo.png" alt="" onclick="return location.href = '/'"></div>
-               <div><input id="Burger__Check" type="checkbox"></div>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Reply</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Help</a></li>
+                <div><input id="Burger__Enable" type="button" value="Open" onclick="Enable()"></div>
+                <div><input id="Burger__Disable" type="button" value="Close" onclick="Disable()"></div>
+                <li class="Burger__Content"><a href="#">Contact</a></li>
+                <li class="Burger__Content"><a href="#">Reply</a></li>
+                <li class="Burger__Content"><a href="#">Community</a></li>
+                <li class="Burger__Content"><a href="#">Help</a></li>
             </ul>
         </nav>
     </header>
 </body>
 </html>
+<script>
+    function Enable(){
+        var lis = [] = document.getElementsByClassName("Burger__Content");
+        var btnD = document.getElementById("Burger__Disable");
+        var btnE = document.getElementById("Burger__Enable");
+
+        for(let i = 0; i < lis.length; i++){
+            lis[i].style["display"] = "block";
+        }
+        btnD.style["display"] = "block";
+        btnE.style["display"] = "none";
+    }
+    function Disable(){
+        var lis = [] = document.getElementsByClassName("Burger__Content");
+        var btnD = document.getElementById("Burger__Disable");
+        var btnE = document.getElementById("Burger__Enable");
+
+        for(let i = 0; i < lis.length; i++){
+            lis[i].style["display"] = "none";
+        }
+
+        btnD.style["display"] = "none";
+        btnE.style["display"] = "block";
+    }
+</script>
