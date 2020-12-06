@@ -80,6 +80,19 @@ nav ul li a {
   padding-top: 25px;
   text-align: center;
 }
+.Contact__Main ul{
+  margin: 0;
+  padding: 0;
+}
+.Contact__Main ul li{
+  list-style-type: none;
+  margin-top: 100px;
+  margin-bottom: -50px;
+  color: white;
+  font-size: 25px;
+  line-height: 0px;
+  text-align: center;
+}
 @media screen and (max-width: 1400px) {
   #Logo__Div {
     margin-right: 550px;
@@ -162,6 +175,11 @@ nav ul li a {
     #Content__Image {
       display: none;
     }
+}
+@media screen and (max-width: 600px) {
+.Contact__Main{
+  width: 300px;
+}
 }
 @media screen and (min-width: 900px) {
   li {
