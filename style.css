@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+  width: 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -86,6 +89,11 @@ nav ul li a:hover {
   100%{
     opacity: 1;
   }
+}
+footer{
+  background-color: rgb(20, 14, 31);
+  margin-top: 175px;
+  height: 200px;
 }
 .Contact__Main{
   animation: vis;
