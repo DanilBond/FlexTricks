@@ -101,6 +101,11 @@ nav ul li a:hover {
   padding-top: 25px;
   text-align: center;
 }
+.Contact__Main p{
+  color: white;
+  padding-top: 25px;
+  text-align: center;
+}
 .Contact__Main ul{
   margin: 0;
   padding: 0;
