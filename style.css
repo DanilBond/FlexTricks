@@ -58,7 +58,17 @@ nav ul li a {
   margin-top: -200px;
   margin-left: 600px;
 }
+@keyframes vis{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 .Contact__Main{
+  animation: vis;
+  animation-duration: 1s;
   margin: 100px auto;
   width: 600px;
   height: 400px;
