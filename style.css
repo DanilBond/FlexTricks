@@ -5,6 +5,11 @@ html, body{
     padding: 0;
     margin: 0;
 }
+body{
+    background-image: url("./img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 #Logo__Div{
     margin-right: 750px;
 }
@@ -39,6 +44,21 @@ nav ul li a{
     color: rgb(230, 230, 230);
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#Content__Image{
+    margin-top: 200px;
+    margin-left: 150px;
+    width: 400px;
+    height: 250px;
+}
+#Content_Image__Text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    width: 500px;
+    margin-top: -200px;
+    margin-left: 600px;
+
+    
 }
 
 @media screen and (max-width: 1400px){
