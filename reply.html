@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <ul>
+                
+                <div id="Logo__Div"><img src="./img/logo.png" alt="" onclick="return location.href = '/'"></div>
+                <div><input id="Burger__Enable" type="button" value="Open" onclick="Enable()"></div>
+                <div><input id="Burger__Disable" type="button" value="Close" onclick="Disable()"></div>
+                <li class="Burger__Content"><a href="./contact.html">Contact</a></li>
+                <li class="Burger__Content"><a href="#">Reply</a></li>
+                <li class="Burger__Content"><a href="#">Community</a></li>
+                <li class="Burger__Content"><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="Contact__Main">
+            <h1>Reply</h1>
+            <ul>
+                <form action="/">
+                <li><input type="text" id="Name" placeholder="Enter your name"></li>
+                <li><input type="text" id="Reply" placeholder="Enter your reply"></li>
+                <li><input type="button" value="Send"></li>
+            </form>
+            </ul>
+        </div>
+        
+    </main>
+</body>
+</html>
+<script>
+    function Enable(){
+        var lis = [] = document.getElementsByClassName("Burger__Content");
+        var btnD = document.getElementById("Burger__Disable");
+        var btnE = document.getElementById("Burger__Enable");
+
+        for(let i = 0; i < lis.length; i++){
+            lis[i].style["display"] = "block";
+        }
+        btnD.style["display"] = "block";
+        btnE.style["display"] = "none";
+    }
+    function Disable(){
+        var lis = [] = document.getElementsByClassName("Burger__Content");
+        var btnD = document.getElementById("Burger__Disable");
+        var btnE = document.getElementById("Burger__Enable");
+
+        for(let i = 0; i < lis.length; i++){
+            lis[i].style["display"] = "none";
+        }
+
+        btnD.style["display"] = "none";
+        btnE.style["display"] = "block";
+    }
+</script>
