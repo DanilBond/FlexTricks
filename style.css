@@ -95,6 +95,11 @@ footer{
   margin-top: 175px;
   height: 200px;
 }
+footer h3{
+  padding-top: 75px;
+  text-align: center;
+  color: white;
+}
 .Contact__Main{
   animation: vis;
   animation-duration: 1s;
