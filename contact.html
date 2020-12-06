@@ -26,7 +26,36 @@
     <main>
         <div class="Contact__Main">
             <h1>Contact</h1>
+            <ul>
+                <li>Phone +996123456</li>
+                <li>Email yourmail@mail.ru</li>
+            </ul>
         </div>
     </main>
 </body>
 </html>
+<script>
+    function Enable(){
+        var lis = [] = document.getElementsByClassName("Burger__Content");
+        var btnD = document.getElementById("Burger__Disable");
+        var btnE = document.getElementById("Burger__Enable");
+
+        for(let i = 0; i < lis.length; i++){
+            lis[i].style["display"] = "block";
+        }
+        btnD.style["display"] = "block";
+        btnE.style["display"] = "none";
+    }
+    function Disable(){
+        var lis = [] = document.getElementsByClassName("Burger__Content");
+        var btnD = document.getElementById("Burger__Disable");
+        var btnE = document.getElementById("Burger__Enable");
+
+        for(let i = 0; i < lis.length; i++){
+            lis[i].style["display"] = "none";
+        }
+
+        btnD.style["display"] = "none";
+        btnE.style["display"] = "block";
+    }
+</script>
